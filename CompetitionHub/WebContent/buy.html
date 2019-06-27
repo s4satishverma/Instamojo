@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Competition Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script>
+  try {
+    var pageReadyAt = (new Date()).getTime();
+  } catch (e) {}
+  </script>
+  
+  <script type="text/javascript">var STATIC_URL="//im-cdn.com/";</script>
+<script type="text/javascript">
+  window.MojoUser = {
+    id: null,
+    email: null,
+    username: null,
+    phone: null,
+    sign_up_time: null,
+    merchant_sub_category: null,
+    merchant_super_category: null,
+    delay_mixpanel_identify: null,
+    first_name: null,
+    last_name: null,
+    kyc_status: null,
+    user_level: null
+  };
+  window.MojoServerEnv = "production"
+
+  window.FsUserVars = {
+    displayName: MojoUser.first_name && MojoUser.last_name ? MojoUser.first_name + ' ' + MojoUser.last_name : MojoUser.username,
+    email: MojoUser.email,
+    kycstatus_str: MojoUser.kyc_status,
+    signupdate_date: new Date(MojoUser.sign_up_time),
+    phone_str: MojoUser.phone,
+    userlevel_str: MojoUser.user_level
+  }
+  
+</script>
+
+  <style>
+    @charset "UTF-8";@import 'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic|Roboto+Condensed';@import url("https://fonts.googleapis.com/css?family=PT+Mono");html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header{display:block}a{background-color:transparent}strong{font-weight:bold}h1{font-size:2em;margin:0.67em 0}img{border:0}hr{box-sizing:content-box;height:0}button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}@font-face{font-family:'FontAwesome';src:url(https://im-cdn.com/assets/fonts/fontawesome/fontawesome-webfont.f7c2b4b747b1.eot?v=4.3.0);src:url(https://im-cdn.com/assets/fonts/fontawesome/fontawesome-webfont.f7c2b4b747b1.eot?#iefix&amp;v=4.3.0) format("embedded-opentype"),url(https://im-cdn.com/assets/fonts/fontawesome/fontawesome-webfont.97493d3f11c0.woff2?v=4.3.0) format("woff2"),url(https://im-cdn.com/assets/fonts/fontawesome/fontawesome-webfont.d9ee23d59d0e.woff?v=4.3.0) format("woff"),url(https://im-cdn.com/assets/fonts/fontawesome/fontawesome-webfont.706450d7bba6.ttf?v=4.3.0) format("truetype"),url(https://im-cdn.com/assets/fonts/fontawesome/fontawesome-webfont.2980083682e9.svg?v=4.3.0#fontawesomeregular) format("svg");font-weight:normal;font-style:normal}.icon{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0,0)}.icon-inr:before{content:""}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header{display:block}a{background-color:transparent}strong{font-weight:bold}h1{font-size:2em;margin:0.67em 0}img{border:0}hr{box-sizing:content-box;height:0}button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}html{font-size:100%;box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}body{padding:0;margin:0;font-family:"Roboto",sans-serif;font-weight:normal;line-height:1;color:#192A38;background:#F1F4F6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}img{max-width:100%;height:auto;-ms-interpolation-mode:bicubic;display:inline-block;vertical-align:middle}button{-webkit-appearance:none;-moz-appearance:none;background:transparent;padding:0;border:0;border-radius:4px;line-height:1}.row{max-width:62.5rem;margin-left:auto;margin-right:auto}.row::before,.row::after{content:' ';display:table}.row::after{clear:both}.row.collapse>.columns{padding-left:0;padding-right:0}.row .row{max-width:none;margin-left:-0.9375rem;margin-right:-0.9375rem}@media screen and (min-width:40em){.row .row{margin-left:-0.9375rem;margin-right:-0.9375rem}}.row .row.collapse{margin-left:0;margin-right:0}.columns{width:100%;float:left;padding-left:0.9375rem;padding-right:0.9375rem}@media screen and (min-width:40em){.columns{padding-left:0.9375rem;padding-right:0.9375rem}}.columns:last-child:not(:first-child){float:right}.small-12{width:100%}@media screen and (min-width:40em){.medium-4{width:33.3333333333%}.medium-6{width:50%}.medium-8{width:66.6666666667%}}div,ul,li,h1,h3,p{margin:0;padding:0}p{font-size:inherit;line-height:1.6;margin-bottom:0;text-rendering:optimizeLegibility}i{font-style:italic;line-height:inherit}strong{font-weight:bold;line-height:inherit}h1,h3{font-family:"Roboto",sans-serif;font-weight:normal;font-style:normal;color:inherit;text-rendering:optimizeLegibility;margin-top:0;margin-bottom:0.5rem;line-height:1.4}h1{font-size:1.5rem}h3{font-size:1.1875rem}@media screen and (min-width:40em){h1{font-size:3rem}h3{font-size:1.9375rem}}a{color:#2199e8;text-decoration:none;line-height:inherit}a img{border:0}hr{max-width:62.5rem;height:0;border-right:0;border-top:0;border-bottom:1px solid #cacaca;border-left:0;margin:1.25rem auto;clear:both}ul{line-height:1.6;margin-bottom:0;list-style-position:outside}li{font-size:inherit}ul{list-style-type:none;margin-left:auto}.text-center{text-align:center}@media screen and (max-width:0em),screen and (min-width:40em){.show-for-small-only{display:none!important}}@media screen and (max-width:39.9375em){.show-for-medium{display:none!important}}.strong{font-weight:bold}.push--top{margin-top:14px!important}.soft--top{padding-top:14px!important}.soft--bottom{padding-bottom:14px!important}.soft-half--left{padding-left:7px!important}.soft-quarter--sides{padding-right:3.5px!important;padding-left:3.5px!important}.caps{text-transform:uppercase!important}@media screen and (max-width:39.9375em){.small-only-push--right{margin-right:14px!important}}.flex-space-between{display:flex;justify-content:space-between;align-items:center}.font-rc{font-family:'Roboto Condensed',sans-serif}.text-grey{color:#93A0AF}.background-white{background:#FFF}.text-overflow-ellipsis{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.text-word-wrap-break-word{word-wrap:break-word}.btn{outline:none;text-decoration:none;text-align:center;font-size:16px;border-radius:4px;box-shadow:none;padding:0.65rem 1rem;display:inline-block;letter-spacing:1px;line-height:1.2em;text-transform:uppercase;font-weight:bold;background:#fff;color:#3B96E0;border:1px solid #3B96E0}.btn-green{outline:none;text-decoration:none;text-align:center;font-size:16px;border-radius:4px;box-shadow:none;padding:0.65rem 1rem;display:inline-block;letter-spacing:1px;line-height:1.2em;text-transform:uppercase;font-weight:bold;background:#2FBE6D;color:#FFF;border:1px solid #2FBE6D}.btn-block{width:100%}.header{background:#FFF}.store__link{color:#192A38}.offer-container{border-radius:4px;padding:20px;background:#FFF}@media screen and (max-width:39.9375em){.offer-container{padding:10px;border-radius:0px}}.offer-container--landscape{border-top-left-radius:0px;border-top-right-radius:0px}.landscape__preview-image{border-top-left-radius:4px;border-top-right-radius:4px;background-color:#DEE5EB}@media screen and (max-width:39.9375em){.landscape__preview-image{border-top-left-radius:0px;border-top-right-radius:0px}}.offer__pricing-block__price{font-size:22px;font-weight:bold}.offer__description--heading{font-family:'Roboto Condensed',sans-serif;font-size:12px;color:#6A8598}.offer__description--content p{margin-bottom:14px}.offer-sidebar{padding:10px;background:#FFF}@media screen and (min-width:40em){.offer-sidebar{border-radius:4px}}.portrait__header-block{border-radius:4px}@media screen and (max-width:39.9375em){.portrait__header-block{border-radius:0px}}.portrait-image-center-cropped{width:100%;height:320px;background-size:contain;background-position:center center;background-repeat:no-repeat;border:1px solid #F1F4F6;border-radius:4px}@media screen and (max-width:39.9375em){.portrait-image-center-cropped{border-radius:0px;border:none}}.product-title{font-size:24px}.paragraph p{font-size:16px;line-height:1.75em}.seller-name{font-size:18px}.sidebar-content,.actionbar{font-size:12px}.actionbar span{margin-left:14px}.actionbar span:first-child{margin-left:0px}.product-carousel .slider-control-btn{opacity:0.7;outline:none}.slider-item{border-radius:4px;border:1px solid #DEE5EB;width:100%;height:170px;position:relative}.slider-item .slider-item__image{background-size:cover;background-position:50% 50%;height:130px;background-repeat:no-repeat;border-top-left-radius:2px;border-top-right-radius:2px;background-color:#DEE5EB}.slider-item .slider-item__info--title{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;padding:5px 5px 0px 5px;font-size:12px;color:#222222}.slider-item .slider-item__info--price{font-size:10px;padding:0px 5px 5px 5px;color:#2FBE6D;font-weight:bold;line-height:1.2}.slider-item .slider-item__info--price *{font-size:10px!important}@media screen and (min-width:40em){.sidebar-column{padding:14px!important}}@font-face{font-family:'Nucleo Outline';src:url(https://im-cdn.com/assets/fonts/nucleo-fonts/nucleo-outline.7d33ec0a69e7.woff);src:url(https://im-cdn.com/assets/fonts/nucleo-fonts/nucleo-outline.3af97f447fa9.eot) format("embedded-opentype"),url(https://im-cdn.com/assets/fonts/nucleo-fonts/nucleo-outline.8231510fd4f3.woff2) format("woff2"),url(https://im-cdn.com/assets/fonts/nucleo-fonts/nucleo-outline.7d33ec0a69e7.woff) format("woff"),url(https://im-cdn.com/assets/fonts/nucleo-fonts/nucleo-outline.b22867f6eb8c.ttf) format("truetype"),url(https://im-cdn.com/assets/fonts/nucleo-fonts/nucleo-outline.aee1a130f59e.svg) format("svg");font-weight:normal;font-style:normal}.nc-icon-outline{display:inline-block;font:normal normal normal 14px/1 "Nucleo Outline";font-size:inherit;speak:none;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.nc-icon-outline.ui-2_share-bold:before{content:"\ed80"}.nc-icon-outline.arrows-1_minimal-left:before{content:"\ea6b"}.nc-icon-outline.arrows-1_minimal-right:before{content:"\ea6c"}.nc-icon-outline.arrows-1_minimal-right:before{font-weight:bolder}.text-grey{color:#4C5D69}.background-white{background-color:#FFFFFF!important}
+  </style>
+  <link href="https://im-cdn.com/assets/images/favicon.22f4453938a6.png" rel="shortcut icon" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="INDEX, NOFOLLOW">
+  <meta name="description" content="Crazy Gk Trick  All maths video Purchase Online | Crazy Gk Trick Pen drive Course">
+  <meta name="keywords" content="Crazy Gk Trick Maths Video Course">
+  <link rel="canonical" href="https://www.instamojo.com/crazygktrick/pen-drive-maths-course-2018-hindi-by-crazy-g/">
+  <meta name="twitter:card" content="product"><meta name="twitter:site" content="@instamojo">
+  <meta name="twitter:data1" content="INR 1590"><meta name="twitter:label1" content="PRICE">
+  <meta name="twitter:data2" content="OTHERS"><meta name="twitter:label2" content="PRODUCT TYPE">
+  <meta property="og:title" content="Crazy Gk Trick  Maths video">
+  <meta property="og:type" content="og:product">
+  <meta property="og:url" content="https://www.instamojo.com/crazygktrick/pen-drive-maths-course-2018-hindi-by-crazy-g/">
+  <meta property="og:image" content="images/logo.jpg">
+  <meta property="og:description" content="Crazy Gk Trick  All maths video Purchase Online | Crazy Gk Trick Pen drive Course">
+  <meta property="og:price:amount" content="1590"><meta property="og:price:currency" content="INR">
+  <script type="application/ld+json">
+
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "description": "&lt;p&gt;इस Pen-Drive Course में Quantitative Aptitude (Maths) के सभी Topics को video के माध्यम से समझाया गया है ये Maths Course सभी Competitive exam के लिए लाभदायक है .&lt;br&gt;
+   Exam Cover : SSC CGL , SSC CHSL , BANK , Railway , FCI , Delhi SI , MPPSC , UPPCS , State PSC Exam &amp;amp; All Govt.Exam&lt;/p&gt;
+
+&lt;p&gt;अधिक जानकारी के लिए आप Support Team से बात कर सकते है &lt;br&gt;
+Mob : 7070634348 | 7070634348 &lt;/p&gt;
+
+&lt;p&gt;Topics Cover :&lt;br&gt;
+Average (औसत)&lt;br&gt;
+Ratio (अनुपात)&lt;br&gt;
+Percentage (प्रतिशत) &lt;br&gt;
+Profit &amp;amp; Loss (लाभ-हानि) &lt;br&gt;
+Allegation (मिश्रण) &lt;br&gt;
+Data Interpretation (संखिय्की) &lt;br&gt;
+Age(आयु) &lt;br&gt;
+Simple Interest (साधाराण-ब्याज)&lt;br&gt;
+Compound Interest (चक्रवृद्धि-ब्याज)&lt;br&gt;
+Time &amp;amp; Work (समय और कार्य)&lt;br&gt;
+Pipe &amp;amp; Cistern (नल और टंकी &lt;br&gt;
+Time &amp;amp; Distance (समय और दुरी)&lt;br&gt;
+Problems On Train&lt;br&gt;
+Boat &amp;amp; Stream (नाव एवं धारा)&lt;br&gt;
+Simplification Part 1&lt;br&gt;
+Simplification Part 2 (LCM &amp;amp; HCF)&lt;br&gt;
+Mensuration (बेलन)&lt;br&gt;
+Mensuration (शंकु &amp;amp; गोला)&lt;/p&gt;
+",
+  "name": "Pen-drive Maths Course 2018 ( Hindi)  By Crazy GkTrick",
+  "image": "images/logo.jpg",
+  "offers": {
+    "@type": "Offer",
+    "availability": "http://schema.org/InStock",
+    "price": "1590.00",
+    "priceCurrency": "INR",
+    "itemOffered": "Pen-drive Maths Course 2018 ( Hindi)  By Crazy GkTrick",
+    "seller": "Crazy Gk Trick"
+  },
+  "url": "#"
+}
+</script>
+
+</head>
+<body class="offer ">
+      <script>
+        window.__INITIAL_STATE__ = {"product":{"sellerInfo":{"avatar":"https:\u002F\u002Fd1k8ddzq4m8741.cloudfront.net\u002Fimgs\u002F794b139bb4ef4a85aac8cb3e20db445b.jpg","seller":{"username":"Competition Hub","first_name":"Crazy Gk Trick","last_name":null},"isCartEnabled":false,"isStoreEnabled":true,"productsInStore":"2","isUserOwner":false,"joinedDate":null},"offerInfo":{"slug":"pen-drive-maths-course-2018-hindi-by-crazy-g","username":"Competition Hub","offerPathname":"\u002Fcrazygktrick\u002Fpen-drive-maths-course-2018-hindi-by-crazy-g\u002F","isImagePortrait":true,"isOfferAvailable":true,"errorCode":null,"preview":"https:\u002F\u002Fd1k8ddzq4m8741.cloudfront.net\u002Fimgs\u002F94ea6269e6e743229169b2a4019a3966.jpg","title":"Pen-drive Maths Course 2018 ( Hindi)  By Crazy GkTrick","basePrice":1590,"minPrice":1590,"maxPrice":1590,"discount":{"discountAmount":0,"discountCode":null,"discountError":null},"priceBoost":false,"description":"\u003Cp\u003Eइस Pen-Drive Course में Quantitative Aptitude (Maths) के सभी Topics को video के माध्यम से समझाया गया है ये Maths Course सभी Competitive exam के लिए लाभदायक है .\u003Cbr\u003E\nExam Cover : SSC CGL , SSC CHSL , BANK , Railway , FCI , Delhi SI , MPPSC , UPPCS , State PSC Exam &amp; All Govt.Exam\u003C\u002Fp\u003E\n\n\u003Cp\u003Eअधिक जानकारी के लिए आप Support Team से बात कर सकते है \u003Cbr\u003E\nMob : 7748851640 | 9109624872 \u003C\u002Fp\u003E\n\n\u003Cp\u003ETopics Cover :\u003Cbr\u003E\nAverage (औसत)\u003Cbr\u003E\nRatio (अनुपात)\u003Cbr\u003E\nPercentage (प्रतिशत) \u003Cbr\u003E\nProfit &amp; Loss (लाभ-हानि) \u003Cbr\u003E\nAllegation (मिश्रण) \u003Cbr\u003E\nData Interpretation (संखिय्की) \u003Cbr\u003E\nAge(आयु) \u003Cbr\u003E\nSimple Interest (साधाराण-ब्याज)\u003Cbr\u003E\nCompound Interest (चक्रवृद्धि-ब्याज)\u003Cbr\u003E\nTime &amp; Work (समय और कार्य)\u003Cbr\u003E\nPipe &amp; Cistern (नल और टंकी \u003Cbr\u003E\nTime &amp; Distance (समय और दुरी)\u003Cbr\u003E\nProblems On Train\u003Cbr\u003E\nBoat &amp; Stream (नाव एवं धारा)\u003Cbr\u003E\nSimplification Part 1\u003Cbr\u003E\nSimplification Part 2 (LCM &amp; HCF)\u003Cbr\u003E\nMensuration (बेलन)\u003Cbr\u003E\nMensuration (शंकु &amp; गोला)\u003C\u002Fp\u003E\n","type":"physical","digital":{},"event":{},"physical":{"states":[["35","Andaman and Nicobar Islands"],["37","Andhra Pradesh"],["12","Arunachal Pradesh"],["18","Assam"],["10","Bihar"],["04","Chandigarh"],["22","Chattisgarh"],["26","Dadra and Nagar Haveli"],["25","Daman and Diu"],["07","Delhi"],["30","Goa"],["24","Gujarat"],["06","Haryana"],["02","Himachal Pradesh"],["01","Jammu and Kashmir"],["20","Jharkhand"],["29","Karnataka"],["32","Kerala"],["31","Lakshadweep Islands"],["23","Madhya Pradesh"],["27","Maharashtra"],["14","Manipur"],["17","Meghalaya"],["15","Mizoram"],["13","Nagaland"],["21","Odisha"],["34","Pondicherry"],["03","Punjab"],["08","Rajasthan"],["11","Sikkim"],["33","Tamil Nadu"],["36","Telangana"],["16","Tripura"],["09","Uttar Pradesh"],["05","Uttarakhand"],["19","West Bengal"]],"shipsWithin":"Ships within 5 days"},"isCarted":false,"isBeingCarted":false,"isCartable":false,"isDirectCartable":false,"offerAffiliate":{"isEnabled":false,"actionUrl":"https:\u002F\u002Fwww.instamojo.com\u002Faffiliate\u002Fsubscribe\u002Fpen-drive-maths-course-2018-hindi-by-crazy-g\u002F"},"addToCartErrors":{},"limitQuantity":null,"purchasedQuantity":197}}}
+      </script>
+      
+  <script>
+  /*
+    http://www.webapps-online.com/online-tools/user-agent-strings/dv/operatingsystem51848/linux
+  */
+  var isOperaMini = (navigator.userAgent.indexOf('Opera Mini') > -1);
+
+  if (isOperaMini) {
+    window.alert('Data Savings Mode in Opera Mini is not supported, please turn it off and reload the page.');
+  }
+</script>
+
+  <!--[if lt IE 8]>
+    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a>.</p>
+  <![endif]-->
+<script>
+
+</script>
+<div id="product"><div data-reactroot=""><div><div><span></span><header class="header"><div class="row "><div class="columns small-12"><div class="flex-space-between" style="height:58px"><div><a href="https://www.instamojo.com/crazygktrick/?ref=offer_header" target="_blank"><span><img src="images/logo.jpg" style="height:20px;border-radius:2px;display:inline-block"><span style="vertical-align:middle" class="caps strong soft-half--left seller-name store__link">Competition Hub</span></span></a></div><div></div></div></div></div></header><div class="row soft--bottom collapse"><div class="columns small-12 medium-8 soft--top"><div><div class="background-white portrait__header-block"><div class="row collapse"><div class="columns medium-6 show-for-medium"><div class="soft--ends soft--left"><div class="portrait-image-center-cropped" style="background-image:url(images/logo.jpg)"></div></div></div><div class="columns small-12 show-for-small-only"><div class="portrait-image-center-cropped" style="background-image:url(images/logo.jpg)"></div></div><div class="columns small-12 medium-6"><div class="offer-container"><h3 class="font-rc product-title text-word-wrap-break-word">Pen-drive Maths Course 2018 ( Hindi)  By Crazy GkTrick</h3><div class="actionbar"><span><span class="caps strong" style="color:#3B96E0;cursor:pointer"><i class="nc-icon-outline ui-2_share-bold" style="margin-right:6px"></i>Share</span></span></div><div class="offer__info-block"><ul class="list-dotted soft--top flush--left"><li>Ships within 5 days</li></ul></div><div class="offer__pricing-block"><div class="offer__pricing-block__price soft--top"><span><i class="icon icon-inr"></i>1,590</span></div><div class="row soft--top"><div class="columns small-12"><button class="btn-green btn-block caps">Buy Now</button></div></div></div></div></div></div></div><div class="push--top small-only-push--right" style="font-size:12px;text-align:right"></div><div><div class="offer-container push--top"><div class="offer__description-block"><div class="offer__description--heading font-rc caps"><span style="border-bottom:2px solid #3694D0">Description</span></div><div class="soft--top paragraph"><div class="offer__description--content"><p>&#x907;&#x938; Pen-Drive Course &#x92E;&#x947;&#x902; Quantitative Aptitude (Maths) &#x915;&#x947; &#x938;&#x92D;&#x940; Topics &#x915;&#x94B; video &#x915;&#x947; &#x92E;&#x93E;&#x927;&#x94D;&#x92F;&#x92E; &#x938;&#x947; &#x938;&#x92E;&#x91D;&#x93E;&#x92F;&#x93E; &#x917;&#x92F;&#x93E; &#x939;&#x948; &#x92F;&#x947; Maths Course &#x938;&#x92D;&#x940; Competitive exam &#x915;&#x947; &#x932;&#x93F;&#x90F; &#x932;&#x93E;&#x92D;&#x926;&#x93E;&#x92F;&#x915; &#x939;&#x948; .<br>
+Exam Cover : SSC CGL , SSC CHSL , BANK , Railway , FCI , Delhi SI , MPPSC , UPPCS , State PSC Exam &amp; All Govt.Exam</p>
+
+<p>&#x905;&#x927;&#x93F;&#x915; &#x91C;&#x93E;&#x928;&#x915;&#x93E;&#x930;&#x940; &#x915;&#x947; &#x932;&#x93F;&#x90F; &#x906;&#x92A; Support Team &#x938;&#x947; &#x92C;&#x93E;&#x924; &#x915;&#x930; &#x938;&#x915;&#x924;&#x947; &#x939;&#x948; <br>
+Mob : 7070634348 | 7070634348 </p>
+<p>Topics Cover :<br>
+Average (&#x914;&#x938;&#x924;)<br>
+Ratio (&#x905;&#x928;&#x941;&#x92A;&#x93E;&#x924;)<br>
+Percentage (&#x92A;&#x94D;&#x930;&#x924;&#x93F;&#x936;&#x924;) <br>
+Profit &amp; Loss (&#x932;&#x93E;&#x92D;-&#x939;&#x93E;&#x928;&#x93F;) <br>
+Allegation (&#x92E;&#x93F;&#x936;&#x94D;&#x930;&#x923;) <br>
+Data Interpretation (&#x938;&#x902;&#x916;&#x93F;&#x92F;&#x94D;&#x915;&#x940;) <br>
+Age(&#x906;&#x92F;&#x941;) <br>
+Simple Interest (&#x938;&#x93E;&#x927;&#x93E;&#x930;&#x93E;&#x923;-&#x92C;&#x94D;&#x92F;&#x93E;&#x91C;)<br>
+Compound Interest (&#x91A;&#x915;&#x94D;&#x930;&#x935;&#x943;&#x926;&#x94D;&#x927;&#x93F;-&#x92C;&#x94D;&#x92F;&#x93E;&#x91C;)<br>
+Time &amp; Work (&#x938;&#x92E;&#x92F; &#x914;&#x930; &#x915;&#x93E;&#x930;&#x94D;&#x92F;)<br>
+Pipe &amp; Cistern (&#x928;&#x932; &#x914;&#x930; &#x91F;&#x902;&#x915;&#x940; <br>
+Time &amp; Distance (&#x938;&#x92E;&#x92F; &#x914;&#x930; &#x926;&#x941;&#x930;&#x940;)<br>
+Problems On Train<br>
+Boat &amp; Stream (&#x928;&#x93E;&#x935; &#x90F;&#x935;&#x902; &#x927;&#x93E;&#x930;&#x93E;)<br>
+Simplification Part 1<br>
+Simplification Part 2 (LCM &amp; HCF)<br>
+Mensuration (&#x92C;&#x947;&#x932;&#x928;)<br>
+Mensuration (&#x936;&#x902;&#x915;&#x941; &amp; &#x917;&#x94B;&#x932;&#x93E;)</p>
+</div></div></div></div></div></div></div><div class="columns small-12 medium-4 soft--top sidebar-column"><div><div><div class="offer-sidebar"><a href="https://www.instamojo.com/crazygktrick/?ref=offer_profile" target="_blank"><span><img src="images/logo.jpg" style="height:20px;border-radius:2px;display:inline-block"><span style="vertical-align:middle" class="caps strong soft-half--left seller-name store__link">Competition Hub</span></span></a><div class="soft--top sidebar-content"><a href="https://www.instamojo.com/crazygktrick/?ref=offer_products" target="_blank"><div class="caps">2 Products on Store</div></a><a href="https://www.instamojo.com/crazygktrick/?ref=offer_page"><div class="btn btn-block push--top sidebar-content">VIEW STORE</div></a></div></div></div></div></div></div><footer><div class="row collapse soft--ends"><div class="columns small-12 text-center"><a href="/?utm_source=widget&amp;utm_campaign=offerfooter&amp;utm_medium=poweredby" target="_blank"><span class="text-black">Powered by<!-- -->&#xA0;Competition Hub</span></a></div></div></footer></div></div></div></div>
+
+
+<div>
+  <script id="consumer-waggle">
+  var INITIAL_STATE = {
+    show_additional_info_tab: true,
+    is_anchor_text: false,
+    show_payment_tab: true,
+    signature: null,
+    show_socialpay_tab: false,
+    is_embed: false,
+    is_iframe: false,
+    im_branding: true,
+    affiliate: null,
+    is_store_enabled: true,
+    products_in_store: "2",
+    is_owner: false,
+    is_direct_to_payments: false,
+    is_cart_enabled: false,
+    is_shipping_charges_enabled: false,
+    show_convenience_fee: false,
+    is_international_enabled: false,
+    offer: {
+      initial_shipping_charges: 0,
+      is_cartable: false,
+      is_direct_cartable: false,
+      type: "physical",
+      payment_forms: null,
+      
+      digital: {
+        
+      },
+      
+      event: {
+        
+      },
+      physical: {
+        ships_within: "Ships within 5 days",
+        
+          states: [['35', 'Andaman and Nicobar Islands'], ['37', 'Andhra Pradesh'], ['12', 'Arunachal Pradesh'], ['18', 'Assam'], ['10', 'Bihar'], ['04', 'Chandigarh'], ['22', 'Chattisgarh'], ['26', 'Dadra and Nagar Haveli'], ['25', 'Daman and Diu'], ['07', 'Delhi'], ['30', 'Goa'], ['24', 'Gujarat'], ['06', 'Haryana'], ['02', 'Himachal Pradesh'], ['01', 'Jammu and Kashmir'], ['20', 'Jharkhand'], ['29', 'Karnataka'], ['32', 'Kerala'], ['31', 'Lakshadweep Islands'], ['23', 'Madhya Pradesh'], ['27', 'Maharashtra'], ['14', 'Manipur'], ['17', 'Meghalaya'], ['15', 'Mizoram'], ['13', 'Nagaland'], ['21', 'Odisha'], ['34', 'Pondicherry'], ['03', 'Punjab'], ['08', 'Rajasthan'], ['11', 'Sikkim'], ['33', 'Tamil Nadu'], ['36', 'Telangana'], ['16', 'Tripura'], ['09', 'Uttar Pradesh'], ['05', 'Uttarakhand'], ['19', 'West Bengal']],
+        
+      },
+      is_available: true,
+      error_code: null,
+      slug: "#",
+      base_price: 1590.00,
+      price_boost: false,
+      min_price: 1590.00,
+      max_price: 1590.00,
+      currency: "inr",
+      discount_isapplicable: false,
+      variant_categories: [],
+      shipping_address: true,
+      custom_fields: [],
+      max_quantity: 1,
+      limit_quantity: null,
+      purchased_quantity: 197,
+      prefilled: {},
+      socialpay_platforms: null,
+      seller: {"username": "Competition Hub", "first_name": "Competition Hub", "last_name": null},
+      avatar: "images/logo.jpg",
+      description: "\u003Cp\u003Eइस Pen\u002DDrive Course में Quantitative Aptitude (Maths) के सभी Topics को video के माध्यम से समझाया गया है ये Maths Course सभी Competitive exam के लिए लाभदायक है .\u003Cbr\u003E\u000AExam Cover : SSC CGL , SSC CHSL , BANK , Railway , FCI , Delhi SI , MPPSC , UPPCS , State PSC Exam \u0026amp\u003B All Govt.Exam\u003C/p\u003E\u000A\u000A\u003Cp\u003Eअधिक जानकारी के लिए आप Support Team से बात कर सकते है \u003Cbr\u003E\u000AMob : 7748851640 | 9109624872 \u003C/p\u003E\u000A\u000A\u003Cp\u003ETopics Cover :\u003Cbr\u003E\u000AAverage (औसत)\u003Cbr\u003E\u000ARatio (अनुपात)\u003Cbr\u003E\u000APercentage (प्रतिशत) \u003Cbr\u003E\u000AProfit \u0026amp\u003B Loss (लाभ\u002Dहानि) \u003Cbr\u003E\u000AAllegation (मिश्रण) \u003Cbr\u003E\u000AData Interpretation (संखिय्की) \u003Cbr\u003E\u000AAge(आयु) \u003Cbr\u003E\u000ASimple Interest (साधाराण\u002Dब्याज)\u003Cbr\u003E\u000ACompound Interest (चक्रवृद्धि\u002Dब्याज)\u003Cbr\u003E\u000ATime \u0026amp\u003B Work (समय और कार्य)\u003Cbr\u003E\u000APipe \u0026amp\u003B Cistern (नल और टंकी \u003Cbr\u003E\u000ATime \u0026amp\u003B Distance (समय और दुरी)\u003Cbr\u003E\u000AProblems On Train\u003Cbr\u003E\u000ABoat \u0026amp\u003B Stream (नाव एवं धारा)\u003Cbr\u003E\u000ASimplification Part 1\u003Cbr\u003E\u000ASimplification Part 2 (LCM \u0026amp\u003B HCF)\u003Cbr\u003E\u000AMensuration (बेलन)\u003Cbr\u003E\u000AMensuration (शंकु \u0026amp\u003B गोला)\u003C/p\u003E\u000A",
+      title: "Pen\u002Ddrive Maths Course 2018 ( Hindi)  By Crazy GkTrick",
+      preview: "images/logo.jpg",
+      is_image_portrait: true,
+      short_url: "http://imojo.in/cg6s4y",
+      short_url_identifier: "cg6s4y",
+      offer_affiliate: {
+        is_enabled: false,
+        action_url: "#",
+        
+      }
+    },
+    discount: {
+      discount_amount: 0,
+      discount_code: null,
+      discount_error: null
+    },
+  };
+  </script>
+  <script>
+  var windows = {};
+
+  var socialPayCallbackData = null;
+
+  function socialPayCallback (payload, provider) {
+    socialPayCallbackData = payload;
+  }
+  </script>
+
+  <div id="payment-area"></div>
+  <!--[if lt IE 10]>
+    <script src="https://im-cdn.com/assets/vendors/flexibility.01076c6ede63.js"></script>
+  <![endif]-->
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31152203-1', {'siteSpeedSampleRate': 50});
+  ga('require', 'displayfeatures');
+  ga('require', 'GTM-KZ7PPTK');
+  ga('send', 'pageview');
+
+  
+</script>
+
+<div id="js-sentry-for-react"></div>
+<script>
+if(window['require'] != void 0) {
+  Raven.config('https://65e56dec700541a7b661f348b0a27bd7@app.getsentry.com/69890').install();
+}
+else {
+  var s = document.createElement( 'script' );
+  s.setAttribute( 'src', 'https://cdn.ravenjs.com/3.24.0/raven.min.js' );
+  s.setAttribute( 'crossorigin', 'anonymous' );
+  s.onload=function() { Raven.config('https://65e56dec700541a7b661f348b0a27bd7@app.getsentry.com/69890').install(); };
+  document.getElementById("js-sentry-for-react").appendChild( s );
+}
+</script>
+
+<script>
+  
+  var MIXPANEL_TOKEN = '3b50c4ddad918be0bb151763430d4992';
+  
+</script>
+
+
+<!-- start Mixpanel -->
+<script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init(window.MIXPANEL_TOKEN,{loaded:function(){window.MIXPANEL_DISTINCT_ID=mixpanel.get_distinct_id(),window.MojoUser&&mixpanel.register(window.MojoUser)},disable_notifications:!window.showMixpanelNotifications,secure_cookie:true});</script>
+<!-- end Mixpanel -->
+  <script>
+    var cb = function() {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = "https://im-cdn.com/assets/stylesheets/zeus.4c039dd940c8.css";
+      var h = document.getElementsByTagName('head')[0];
+      h.appendChild(l);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+  </script>
+
+  <script type="text/javascript" src="https://im-cdn.com/assets/vendors/modernizr.custom.10803.5a933898da84.js"></script>
+  <script type="text/javascript" src="https://im-cdn.com/assets/js/bundle/product.bundle.9aef6f1800dc.js"></script>
+  <script type="text/javascript" src="https://im-cdn.com/assets/js/bundle/payments.bundle.edfe080b74a1.js"></script>
+  <script>
+    // IMUser GA Tracker
+    ga('set', 'contentGroup1', 'User Pages');
+    ga('create', 'UA-31152203-4', {'siteSpeedSampleRate': 50}, {'name': 'imWebApp'});
+    ga('imWebApp.send', 'pageview');
+  </script>
+  <script>
+  // Public GA Tracker
+  ga('set', 'contentGroup1', 'Public');
+  ga('create', 'UA-31152203-3', {'siteSpeedSampleRate': 50}, {'name': 'imWebApp'});
+  ga('imWebApp.send', 'pageview');
+</script>
+
+  <!--[if lt IE 9]>
+    <script src="https://im-cdn.com/assets/vendors/ie8.6792df9eda6d.js"></script>
+  <![endif]-->
+</body>
